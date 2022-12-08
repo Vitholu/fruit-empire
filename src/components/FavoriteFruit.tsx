@@ -22,11 +22,24 @@ const FavoriteFruit = () => {
                             sint.
                         </p>
                         <div>
-                            <div className="flex gap-4 pt-8">
-                                <span className="text-3xl h-12">39$</span>
+                            <div className="flex gap-4 pt-4">
+                                <span className="text-2xl h-12">39$</span>
                                 <span className="text-xl pt-1 text-gray-50 line-through h-12">
                                     55$
                                 </span>
+                            </div>
+                        </div>
+
+                        <div className="flex gap-4">
+                            <div className="flex flex-1 justify-around items-center rounded-md border-2 border-gray-50 p-2">
+                                <span class="material-symbols-outlined">add</span>
+                                <span>1</span>
+                                <span class="material-symbols-outlined">remove</span>
+                            </div>
+                            <div className="flex-1">
+                                <button className="bg-yellow-400 rounded-md w-full h-full">
+                                    Buy Now
+                                </button>
                             </div>
                         </div>
                     </div>
