@@ -16,6 +16,8 @@ module.exports = {
 
                 'black-g150': 'rgba(29, 29, 34, 0)',
                 'white-g150': 'rgba(255, 255, 255, 0.1)',
+
+                'black-g200': '#171719',
             },
             fontFamily: {
                 roboto: ['Roboto', 'sans-serif'],
@@ -30,6 +32,7 @@ module.exports = {
             spacing: {
                 '3/20': '15%',
                 'v2/3': '66vh',
+                'v3/5': '60vh',
                 '1/4': '25%',
                 '1/3': '33%',
                 '1/5': '20%',
@@ -44,6 +47,9 @@ module.exports = {
             },
             lineHeight: {
                 75: '4.6875rem',
+            },
+            maxWidth: {
+                xxs: '250px',
             },
         },
     },

@@ -1,11 +1,9 @@
 import React from 'react'
 import banana from '../assets/banana.png'
-import Orange from '../assets/Orange.png'
-import Melons from '../assets/Melons.png'
 
 const Hero = () => {
     return (
-        <div className="flex  ml-3/20 mr-3/20 h-v2/3 w-screen">
+        <div className="flex  ml-3/20 mr-3/20 h-v3/5">
             <div className="flex-1 border-l-2 border-gray-50 pl-12">
                 <div className="flex mt-20 text-xl">
                     <h2>01</h2>
