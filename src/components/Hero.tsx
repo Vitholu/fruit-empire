@@ -1,4 +1,5 @@
 import React from 'react'
+import banana from '../assets/banana.png'
 
 const Hero = () => {
     return (
@@ -13,7 +14,9 @@ const Hero = () => {
                     Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
                 </p>
             </div>
-            <div className="flex-2"></div>
+            <div className="flex flex-2 items-center w-full justify-center">
+                <img src={banana} alt="" className=" z-10" />
+            </div>
             <div className="flex-2"></div>
         </div>
     )
