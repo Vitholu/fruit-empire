@@ -2,6 +2,7 @@ import { useState } from 'react'
 import Header from './components/Header'
 import Hero from './components/Hero'
 import HeroHighlight from './components/HeroHighlight'
+import FavoriteFruit from './components/FavoriteFruit'
 import './App.css'
 
 function App() {
@@ -12,10 +13,14 @@ function App() {
             <div className=" flex h-24 justify-between shadow-2xl">
                 <Header />
             </div>
-
-            <div className="flex flex-col bg-gradient-to-b from-white-g100 to-black-g100">
-                <Hero />
-                <HeroHighlight />
+            <div className="bg-gradient-to-b from-white-g100 to-black-g100 ">
+                <div className="flex flex-col ">
+                    <Hero />
+                    <HeroHighlight />
+                </div>
+                <div className="h-v5/5">
+                    <FavoriteFruit />
+                </div>
             </div>
         </div>
     )

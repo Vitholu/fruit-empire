@@ -5,6 +5,8 @@ module.exports = {
         extend: {
             colors: {
                 header: 'rgba(0, 0, 0, .9)',
+                cardGray: '#18181A',
+
                 'gray-50': '#888787',
                 'gray-100': '#232121',
 
@@ -33,10 +35,12 @@ module.exports = {
                 '3/20': '15%',
                 'v2/3': '66vh',
                 'v3/5': '60vh',
+                'v5/5': '100vh',
                 '1/4': '25%',
                 '1/3': '33%',
                 '1/5': '20%',
                 '14/25': '56%',
+                110: '27.5rem',
                 128: '32rem',
             },
             backgroundImage: {
