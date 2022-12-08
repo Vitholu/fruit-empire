@@ -7,7 +7,7 @@ function App() {
     return (
         <div className="flex bg-header flex-col">
             <span className="rounded-full h-128 w-128 bg-gradient-radial from-white-g50 to-black-g50 absolute top-1/4 left-1/3 z-1 blur-2xl"></span>
-            <span className="rounded-full h-96 w-96 bg-gradient-radial from-white-g50 to-black-g50 absolute top-1/5 left-2/4 z-1 blur-2xl"></span>
+            <span className="rounded-full h-72 w-72 bg-gradient-radial from-white-g150 to-black-g150 absolute top-1/3 left-14/25 z-1 blur-2xl"></span>
             <div className=" flex h-24 justify-between shadow-2xl">
                 <Header />
             </div>

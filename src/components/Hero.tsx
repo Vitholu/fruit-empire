@@ -1,5 +1,7 @@
 import React from 'react'
 import banana from '../assets/banana.png'
+import Orange from '../assets/Orange.png'
+import Melons from '../assets/Melons.png'
 
 const Hero = () => {
     return (
@@ -14,10 +16,20 @@ const Hero = () => {
                     Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
                 </p>
             </div>
+
             <div className="flex flex-2 items-center w-full justify-center">
                 <img src={banana} alt="" className=" z-10" />
             </div>
-            <div className="flex-2"></div>
+
+            <div className="flex flex-col items-start mt-36 flex-2">
+                <div className="flex gap-4">
+                    <span className="text-hero leading-75">Fruit</span>
+                    <span className="flex items-end pb-5 font-sacramento text-2xl text-yellow-400 h-24">
+                        Fruit Mania
+                    </span>
+                </div>
+                <div className="text-hero leading-75">Delivery</div>
+            </div>
         </div>
     )
 }
