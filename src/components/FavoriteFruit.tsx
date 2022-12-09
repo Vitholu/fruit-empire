@@ -8,7 +8,7 @@ import Apple from '../assets/Apple_Card.png'
 const SectionHeader = (props) => {
     return (
         <div className="flex items-center justify-between border-b-2 pb-6 border-gray-50">
-            <h2 className="text-2xl flex items-center">{props.title}</h2>
+            <h2 className={`${props.size || 'text-2xl'}` + ' flex items-center'}>{props.title}</h2>
             <p className="flex justify-center h-8 gap-2 cursor-pointer">
                 {props.bool && (
                     <>

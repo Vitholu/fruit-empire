@@ -5,6 +5,8 @@ import HeroHighlight from './components/HeroHighlight'
 import FavoriteFruit from './components/FavoriteFruit'
 import HowItWorks from './components/HowItWorks'
 import FruitShop from './components/FruitShop'
+import Reviews from './components/Reviews'
+import Newsletter from './components/Newsletter'
 import './App.css'
 
 function App() {
@@ -28,8 +30,16 @@ function App() {
                     <HowItWorks />
                 </div>
 
-                <div className="ml-3/20 mr-3/20 mt-12">
+                <div className="ml-3/20 mr-3/20 mt-12 mb-32">
                     <FruitShop />
+                </div>
+
+                <div className="ml-3/20 mr-3/20 mb-24">
+                    <Reviews />
+                </div>
+
+                <div className="h-v5/5">
+                    <Newsletter />
                 </div>
             </div>
         </div>
