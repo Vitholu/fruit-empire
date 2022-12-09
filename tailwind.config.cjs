@@ -47,6 +47,7 @@ module.exports = {
             },
             backgroundImage: {
                 'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+                'pre-footer': "url('./src/assets/Background_PreFooter.png')",
             },
             fontSize: {
                 hero: '64px',

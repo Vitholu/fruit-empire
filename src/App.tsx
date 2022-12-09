@@ -7,6 +7,7 @@ import HowItWorks from './components/HowItWorks'
 import FruitShop from './components/FruitShop'
 import Reviews from './components/Reviews'
 import Newsletter from './components/Newsletter'
+import PreFooter from './components/PreFooter'
 import './App.css'
 
 function App() {
@@ -38,8 +39,12 @@ function App() {
                     <Reviews />
                 </div>
 
-                <div className="h-v5/5">
+                <div>
                     <Newsletter />
+                </div>
+
+                <div className="h-v5/5">
+                    <PreFooter />
                 </div>
             </div>
         </div>

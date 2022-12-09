@@ -6,9 +6,12 @@ import OrangeShop_Card from './OrangeShop_Card.png'
 import CherryShop_Card from './CherryShop_Card.png'
 import AvocadoShop_Card from './AvocadoShop_Card.png'
 import StrawberriesShop_Card from './StrawberriesShop_Card.png'
+
 import UserReview1 from './UserReview1.png'
 import UserReview2 from './UserReview2.png'
 import UserReview3 from './UserReview3.png'
+
+import Background_PreFooter from './Background_PreFooter.png'
 
 export {
     BananaShop_Card,
@@ -22,4 +25,5 @@ export {
     UserReview1,
     UserReview2,
     UserReview3,
+    Background_PreFooter,
 }

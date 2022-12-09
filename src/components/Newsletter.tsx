@@ -1,5 +1,6 @@
 import React from 'react'
 import { FaInstagram, FaFacebookSquare, FaTwitterSquare } from 'react-icons/fa'
+
 const SubmitEmail = () => {
     const handleSubmit = (e) => {
         e.preventDefault()
@@ -31,7 +32,7 @@ const Newsletter = () => {
             <div className="flex flex-3 bg-black justify-center items-center">
                 <div className="flex flex-1 gap-8">
                     <div className="text-4xl flex-1">
-                        <h2 className="ml-auto w-64">Subscribe To Our Newsletter</h2>
+                        <h2 className="ml-auto w-64 font-bold">Subscribe To Our Newsletter</h2>
                     </div>
 
                     <div className="flex flex-2 items-center">
