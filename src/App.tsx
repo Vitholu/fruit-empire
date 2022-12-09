@@ -8,6 +8,7 @@ import FruitShop from './components/FruitShop'
 import Reviews from './components/Reviews'
 import Newsletter from './components/Newsletter'
 import PreFooter from './components/PreFooter'
+import Footer from './components/Footer'
 import './App.css'
 
 function App() {
@@ -43,8 +44,12 @@ function App() {
                     <Newsletter />
                 </div>
 
-                <div className="h-v5/5">
+                <div>
                     <PreFooter />
+                </div>
+
+                <div>
+                    <Footer />
                 </div>
             </div>
         </div>
