@@ -28,7 +28,7 @@ function App() {
                     <HowItWorks />
                 </div>
 
-                <div className="ml-3/20 mr-3/20 h-v5/5 mt-12">
+                <div className="ml-3/20 mr-3/20 mt-12">
                     <FruitShop />
                 </div>
             </div>
