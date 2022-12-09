@@ -4,6 +4,7 @@ import Hero from './components/Hero'
 import HeroHighlight from './components/HeroHighlight'
 import FavoriteFruit from './components/FavoriteFruit'
 import HowItWorks from './components/HowItWorks'
+import FruitShop from './components/FruitShop'
 import './App.css'
 
 function App() {
@@ -23,8 +24,12 @@ function App() {
                     <FavoriteFruit />
                 </div>
 
-                <div className="ml-3/20 mr-3/20 h-v5/5">
+                <div className="ml-3/20 mr-3/20 ">
                     <HowItWorks />
+                </div>
+
+                <div className="ml-3/20 mr-3/20 h-v5/5 mt-12">
+                    <FruitShop />
                 </div>
             </div>
         </div>

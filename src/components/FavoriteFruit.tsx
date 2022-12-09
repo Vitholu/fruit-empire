@@ -5,17 +5,26 @@ import Orange from '../assets/Orange_Card.png'
 import Pineapple from '../assets/Pineapple_Card.png'
 import Apple from '../assets/Apple_Card.png'
 
+const SectionHeader = (props) => {
+    return (
+        <div className="flex items-center justify-between border-b-2 pb-6 border-gray-50">
+            <h2 className="text-2xl flex items-center">{props.title}</h2>
+            <p className="flex justify-center h-8 gap-2 cursor-pointer">
+                {props.bool && (
+                    <>
+                        <span>More</span>
+                        <span class="material-symbols-outlined">arrow_right_alt</span>
+                    </>
+                )}
+            </p>
+        </div>
+    )
+}
+
 const FavoriteFruit = () => {
     return (
         <div className="flex flex-col ml-3/20 mr-3/20 mt-24 ">
-            <div className="flex items-center justify-between border-b-2 pb-6 border-gray-50">
-                <h2 className="text-2xl flex items-center">Favorite Fruits</h2>
-                <p className="flex justify-center h-8 gap-2 cursor-pointer">
-                    <span>More</span>
-                    <span class="material-symbols-outlined">arrow_right_alt</span>
-                </p>
-            </div>
-
+            <SectionHeader title={'Favorite Fruits'} bool={true} />
             <div className="grid grid-flow-col auto-cols-auto justify-between gap-x-8 pt-16">
                 <FavoriteFruitCard
                     picture={Banana}
@@ -46,4 +55,5 @@ const FavoriteFruit = () => {
     )
 }
 
+export { SectionHeader }
 export default FavoriteFruit

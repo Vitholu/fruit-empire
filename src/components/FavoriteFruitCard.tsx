@@ -2,7 +2,7 @@ import React from 'react'
 
 const FavoriteFruitCard = (props) => {
     return (
-        <div className="flex flex-col w-72 h-110">
+        <div className="flex flex-col w-72 h-min">
             <img src={props.picture} alt="" />
             <div className="flex flex-col bg-black-g200 p-4">
                 <p className="text-2xl pt-2">{props.fruit}</p>

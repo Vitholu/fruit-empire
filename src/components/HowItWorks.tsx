@@ -1,7 +1,11 @@
 import React from 'react'
-import Background from '../assets/Background_Steps.png'
+import VisualStepByStep from '../assets/VisualStepByStep.png'
 const HowItWorks = () => {
-    return <img src={Background} alt="" className="w-1344px" />
+    return (
+        <>
+            <img src={VisualStepByStep} alt="" className="w-SWM" />
+        </>
+    )
 }
 
 export default HowItWorks
