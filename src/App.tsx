@@ -3,6 +3,7 @@ import Header from './components/Header'
 import Hero from './components/Hero'
 import HeroHighlight from './components/HeroHighlight'
 import FavoriteFruit from './components/FavoriteFruit'
+import HowItWorks from './components/HowItWorks'
 import './App.css'
 
 function App() {
@@ -18,8 +19,12 @@ function App() {
                     <Hero />
                     <HeroHighlight />
                 </div>
-                <div className="h-v5/5">
+                <div className="h-[50rem]">
                     <FavoriteFruit />
+                </div>
+
+                <div className="ml-3/20 mr-3/20 h-v5/5">
+                    <HowItWorks />
                 </div>
             </div>
         </div>
