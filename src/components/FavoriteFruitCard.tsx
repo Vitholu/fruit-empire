@@ -26,7 +26,10 @@ const FavoriteFruitCard = (props) => {
                         <span class="material-symbols-outlined">remove</span>
                     </div>
                     <div className="flex-1">
-                        <StyledBuyButton style="bg-yellow-400 rounded-md w-full h-full" />
+                        <StyledBuyButton
+                            style="bg-yellow-400 rounded-md w-full h-full"
+                            product={props.fruit}
+                        />
                     </div>
                 </div>
             </div>
