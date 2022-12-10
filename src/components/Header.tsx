@@ -1,5 +1,5 @@
 import React from 'react'
-import { CartIcon } from './ShoppingCart'
+import ShoppingCart from './ShoppingCart'
 
 export const Logo = () => {
     return (
@@ -24,7 +24,7 @@ const Header = () => {
                     <li>About Us</li>
                     <li className="flex flex-row gap-6">
                         <span class="material-symbols-outlined">login</span>
-                        <CartIcon />
+                        <ShoppingCart />
                     </li>
                 </ul>
             </div>

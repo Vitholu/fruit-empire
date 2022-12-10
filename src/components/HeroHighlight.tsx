@@ -51,7 +51,7 @@ const HeroHighlight = () => {
 
                         <StyledBuyButton
                             style={'p-3 mb-4 bg-yellow-400 rounded-3xl'}
-                            product={Apple}
+                            product={'Apple'}
                         />
                     </div>
                 </div>
