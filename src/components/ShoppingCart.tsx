@@ -16,16 +16,11 @@ import {
 
 const DropMenuCard = (props) => {
     const { product } = props
-
-    const itemQuantity = () => {
-        const duplicateItemQuantity = product.filter((item, index) => item === product[0]).length
-        console.log(duplicateItemQuantity)
-    }
     const uniqueItemQuantity = new Set([...product])
 
     return (
         <div>
-            <div className="w-[20rem] flex-col flex-wrap min-h-[3rem] absolute top-24 flex justify-center items-center bg-black gap-12">
+            <div className="w-[20rem] flex-col flex-wrap min-h-[3rem] absolute top-24 right-[2%] flex justify-center items-center bg-black gap-12">
                 {[...uniqueItemQuantity].map((x) => {
                     return (
                         <h1 className="max-w-[14rem] text-ellipsis overflow-hidden" key={uuidv4()}>
@@ -80,23 +75,23 @@ const DropMenuCard = (props) => {
     )
 }
 
-const ShoppingCart = (props) => {
-    const { quantity, product } = useContext(CartContext)
-    const [dropDown, setDropDown] = useState(false)
-
-    const handleClick = () => {
-        setDropDown(!dropDown)
-    }
-
+export const CartIcon = ({ setDropDown, dropDown }) => {
+    const { quantity } = useContext(CartContext)
     return (
-        <div className="flex flex-col">
-            <span className="material-symbols-outlined cursor-pointer" onClick={handleClick}>
-                shopping_cart
-                <sub>{quantity}</sub>
-            </span>
-            {dropDown && <DropMenuCard product={product} />}
-        </div>
+        <span
+            className="material-symbols-outlined cursor-pointer"
+            onClick={() => setDropDown(!dropDown)}
+        >
+            shopping_cart
+            <sub>{quantity}</sub>
+        </span>
     )
+}
+
+const ShoppingCart = ({ dropDown }) => {
+    const { product } = useContext(CartContext)
+
+    return <div className="flex flex-col ">{dropDown && <DropMenuCard product={product} />}</div>
 }
 
 export default ShoppingCart

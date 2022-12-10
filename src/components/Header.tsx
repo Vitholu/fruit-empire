@@ -1,5 +1,5 @@
 import React from 'react'
-import ShoppingCart from './ShoppingCart'
+import { CartIcon } from './ShoppingCart'
 
 export const Logo = () => {
     return (
@@ -12,7 +12,7 @@ export const Logo = () => {
     )
 }
 
-const Header = () => {
+const Header = ({ setDropDown, dropDown }) => {
     return (
         <>
             <Logo />
@@ -24,7 +24,7 @@ const Header = () => {
                     <li>About Us</li>
                     <li className="flex flex-row gap-6">
                         <span class="material-symbols-outlined">login</span>
-                        <ShoppingCart />
+                        <CartIcon setDropDown={setDropDown} dropDown={dropDown} />
                     </li>
                 </ul>
             </div>
