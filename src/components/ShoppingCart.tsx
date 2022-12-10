@@ -21,28 +21,14 @@ const DropMenuCard = (props) => {
         const duplicateItemQuantity = product.filter((item, index) => item === product[0]).length
         console.log(duplicateItemQuantity)
     }
-
-    const HandleImage = () => {
-        switch (product) {
-            case 'Apple':
-                return console.log(product)
-
-            default:
-                console.log(product)
-                break
-        }
-    }
     const uniqueItemQuantity = new Set([...product])
 
     return (
         <div>
-            <div className="w-[14rem] flex flex-col flex-wrap min-h-[3rem] bg-yellow-50 absolute top-24">
+            <div className="w-[20rem] flex-col flex-wrap min-h-[3rem] absolute top-24 flex justify-center items-center bg-black gap-12">
                 {[...uniqueItemQuantity].map((x) => {
                     return (
-                        <h1
-                            className="max-w-[14rem] text-black text-ellipsis overflow-hidden"
-                            key={uuidv4()}
-                        >
+                        <h1 className="max-w-[14rem] text-ellipsis overflow-hidden" key={uuidv4()}>
                             <div>
                                 <img
                                     src={(function () {
@@ -73,7 +59,18 @@ const DropMenuCard = (props) => {
                                     })()}
                                     alt=""
                                 />
-                                {x}
+                                <div className="flex justify-between border-b-2 border-gray-50">
+                                    <h3 className="pt-8 pb-2 ">{x}</h3>
+                                    <h3 className="pt-8 pb-2 ">
+                                        {'Quantity: ' +
+                                            product.filter(
+                                                (item, index) =>
+                                                    item ===
+                                                    product[product.findLastIndex((a) => a === x)]
+                                            ).length}
+                                        {console.log(x)}
+                                    </h3>
+                                </div>
                             </div>
                         </h1>
                     )
