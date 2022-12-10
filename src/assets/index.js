@@ -6,6 +6,7 @@ import OrangeShop_Card from './OrangeShop_Card.png'
 import CherryShop_Card from './CherryShop_Card.png'
 import AvocadoShop_Card from './AvocadoShop_Card.png'
 import StrawberriesShop_Card from './StrawberriesShop_Card.png'
+import Blueberries from './Blueberries.png'
 
 import UserReview1 from './UserReview1.png'
 import UserReview2 from './UserReview2.png'
@@ -26,4 +27,5 @@ export {
     UserReview2,
     UserReview3,
     Background_PreFooter,
+    Blueberries,
 }

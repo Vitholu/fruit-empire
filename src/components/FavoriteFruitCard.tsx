@@ -1,4 +1,5 @@
 import React from 'react'
+import StyledBuyButton from './StyledBuyButton'
 
 const FavoriteFruitCard = (props) => {
     return (
@@ -25,7 +26,10 @@ const FavoriteFruitCard = (props) => {
                         <span class="material-symbols-outlined">remove</span>
                     </div>
                     <div className="flex-1">
-                        <button className="bg-yellow-400 rounded-md w-full h-full">Buy Now</button>
+                        <StyledBuyButton
+                            style="bg-yellow-400 rounded-md w-full h-full"
+                            product={props.fruit}
+                        />
                     </div>
                 </div>
             </div>

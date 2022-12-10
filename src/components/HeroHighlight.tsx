@@ -1,6 +1,7 @@
 import React from 'react'
 import Blueberries from '../assets/Blueberries.png'
 import Apple from '../assets/Apple.png'
+import StyledBuyButton from './StyledBuyButton'
 
 const HeroHighlight = () => {
     return (
@@ -22,7 +23,10 @@ const HeroHighlight = () => {
                         <span className="text-xl pt-1 text-gray-50 line-through h-12">59$</span>
                     </div>
 
-                    <button className="p-3 mb-4 bg-yellow-400 rounded-3xl">Buy Now</button>
+                    <StyledBuyButton
+                        style={'p-3 mb-4 bg-yellow-400 rounded-3xl'}
+                        product={'Blueberries'}
+                    />
                 </div>
             </div>
 
@@ -45,7 +49,10 @@ const HeroHighlight = () => {
                             <span className="text-xl pt-1 text-gray-50 line-through h-12">59$</span>
                         </div>
 
-                        <button className="p-3 mb-4 bg-yellow-400 rounded-3xl">Buy Now</button>
+                        <StyledBuyButton
+                            style={'p-3 mb-4 bg-yellow-400 rounded-3xl'}
+                            product={'Apple'}
+                        />
                     </div>
                 </div>
             </div>
