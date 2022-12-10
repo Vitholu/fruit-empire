@@ -9,6 +9,7 @@ import Reviews from './components/Reviews'
 import Newsletter from './components/Newsletter'
 import PreFooter from './components/PreFooter'
 import Footer from './components/Footer'
+import ShoppingCart from './components/ShoppingCart'
 import './App.css'
 
 function App() {
@@ -50,6 +51,10 @@ function App() {
 
                 <div>
                     <Footer />
+                </div>
+
+                <div>
+                    <ShoppingCart />
                 </div>
             </div>
         </div>

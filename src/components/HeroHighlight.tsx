@@ -23,7 +23,10 @@ const HeroHighlight = () => {
                         <span className="text-xl pt-1 text-gray-50 line-through h-12">59$</span>
                     </div>
 
-                    <StyledBuyButton style={'p-3 mb-4 bg-yellow-400 rounded-3xl'} />
+                    <StyledBuyButton
+                        style={'p-3 mb-4 bg-yellow-400 rounded-3xl'}
+                        product={'Blueberries'}
+                    />
                 </div>
             </div>
 
@@ -46,7 +49,10 @@ const HeroHighlight = () => {
                             <span className="text-xl pt-1 text-gray-50 line-through h-12">59$</span>
                         </div>
 
-                        <StyledBuyButton style={'p-3 mb-4 bg-yellow-400 rounded-3xl'} />
+                        <StyledBuyButton
+                            style={'p-3 mb-4 bg-yellow-400 rounded-3xl'}
+                            product={Apple}
+                        />
                     </div>
                 </div>
             </div>
