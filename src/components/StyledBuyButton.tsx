@@ -1,12 +1,15 @@
 import React, { useContext } from 'react'
-import CartContext from './CartContext.js'
+import CartContext from './CartContext'
 
 const StyledBuyButton = (props) => {
-    const { setQuantity, setProduct } = useContext(CartContext)
+    const { setQuantity, setProduct, setItemQuantity, itemQuantity, product } =
+        useContext(CartContext)
 
     const handleClick = () => {
-        setQuantity((prev) => prev + 1)
-        setProduct((prev) => [...prev, props.product])
+        setQuantity((prev) => (itemQuantity >= 1 ? itemQuantity + 1 : prev + 1))
+        for (let i = 1; props.quant >= i; i++) {
+            setProduct((prev) => [...prev, props.product])
+        }
     }
 
     return (

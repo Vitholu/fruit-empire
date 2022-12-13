@@ -16,6 +16,7 @@ import {
 
 const DropMenuCard = (props) => {
     const { product } = props
+    const { itemQuantity } = useContext(CartContext)
     const uniqueItemQuantity = new Set([...product])
 
     return (
@@ -63,7 +64,6 @@ const DropMenuCard = (props) => {
                                                     item ===
                                                     product[product.findLastIndex((a) => a === x)]
                                             ).length}
-                                        {console.log(x)}
                                     </h3>
                                 </div>
                             </div>
@@ -76,14 +76,15 @@ const DropMenuCard = (props) => {
 }
 
 export const CartIcon = ({ setDropDown, dropDown }) => {
-    const { quantity } = useContext(CartContext)
+    const { quantity, product } = useContext(CartContext)
+    const uniqueItemQuantity = new Set([...product])
     return (
         <span
             className="material-symbols-outlined cursor-pointer"
             onClick={() => setDropDown(!dropDown)}
         >
             shopping_cart
-            <sub>{quantity}</sub>
+            <sub>{[...uniqueItemQuantity].length}</sub>
         </span>
     )
 }
