@@ -5,7 +5,14 @@ import Orange from '../assets/Orange_Card.png'
 import Pineapple from '../assets/Pineapple_Card.png'
 import Apple from '../assets/Apple_Card.png'
 
-const SectionHeader = (props) => {
+interface PropsObjectType {
+    bool: boolean
+    title: string
+    size?: string
+}
+
+const SectionHeader = (props: PropsObjectType) => {
+    console.log(props)
     return (
         <div className="flex items-center justify-between border-b-2 pb-6 border-gray-50">
             <h2 className={`${props.size || 'text-2xl'}` + ' flex items-center'}>{props.title}</h2>
@@ -13,7 +20,7 @@ const SectionHeader = (props) => {
                 {props.bool && (
                     <>
                         <span>More</span>
-                        <span class="material-symbols-outlined">arrow_right_alt</span>
+                        <span className="material-symbols-outlined">arrow_right_alt</span>
                     </>
                 )}
             </p>
