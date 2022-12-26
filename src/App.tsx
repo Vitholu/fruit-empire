@@ -16,7 +16,7 @@ import './App.css'
 function App() {
     const [quantity, setQuantity] = useState(0)
     const [itemQuantity, setItemQuantity] = useState(0)
-    const [product, setProduct] = useState([])
+    const [product, setProduct] = useState<any[]>([])
     const [dropDown, setDropDown] = useState(false)
     return (
         <div className="flex bg-header flex-col  max-w-full">
